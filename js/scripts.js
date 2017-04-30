@@ -4,7 +4,10 @@ var animalUpperCased = animal.toUpperCase();
 
 console.log(animalUpperCased);
 
-var txtCharsAfter = txt.replace ('Papugi', animal);
+var txtCharsAfter = txt.replace ('Papugi', animalUpperCased);
 console.log(txtCharsAfter);
 
 console.log(txtCharsAfter.length/2); 
+
+var txtCharsAfter2 = txtCharsAfter.substr(0,txtCharsAfter.length/2);
+console.log(txtCharsAfter2);
