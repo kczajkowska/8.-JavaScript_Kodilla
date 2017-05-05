@@ -1,3 +1,8 @@
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+var list = document.getElementById('Lista');
+var add = document.getElementById('addElem');
+
+add.addEventListener('click', function(){
+	var table = document.getElementsByTagName('li');
+	var item = 'item ' + table.length;
+	list.innerHTML += '<li>' + item + '</li>';
+})
